@@ -5,25 +5,32 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#fff`,
+      textAlign: `center`,
+      background: `linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0))`,
+      position: `absolute`,
+      right: 0,
+      zIndex: 999,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        width: `100vw`,
         padding: `1rem`,
       }}
     >
       <h1 style={{
+        fontSize: `38px`,
         margin: 0,
+        paddingBottom: `1rem`,
         fontFamily: `Dancing Script`,
+        fontWeight: 300,
         display: `inline-block`,
       }}>
         <Link
           to="/"
           style={{
-            color: `#0B2E0B`,
+            color: `#242424`,
             textDecoration: `none`,
           }}
         >
@@ -31,16 +38,24 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <ul style={{
+        fontSize: `18px`,
         listStyleType: `none`,
-        textAlign: `right`,
-        margin: 0,
+        textAlign: `center`,
+        margin: `0 0 0 15px`,
+        fontVariant: `small-caps`,
       }}>
-        <li style={{display: `inline-block`, marginRight: `5px`, paddingRight: `5px`, borderRight: `1px solid #000`}}><Link to="/details/" style={{textDecoration: `none`}}>Details</Link></li>
-        <li style={{display: `inline-block`, marginRight: `5px`, paddingRight: `5px`, borderRight: `1px solid #000`}}><Link to="/travel/" style={{textDecoration: `none`}}>Travel</Link></li>
-        <li style={{display: `inline-block`, marginRight: `5px`, paddingRight: `5px`, borderRight: `1px solid #000`}}><Link to="/photos/" style={{textDecoration: `none`}}>Photos</Link></li>
-        <li style={{display: `inline-block`, marginRight: `5px`, paddingRight: `5px`,}}><a href="https://www.williams-sonoma.com/registry/k98w8vrzw8/registry-list.html" target="_blank" rel="noopener noreferrer" style={{textDecoration: `none`}}>Registry</a></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/details/" style={{textDecoration: `none`, color: `#242424`,}}>Details</Link></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/travel/" style={{textDecoration: `none`, color: `#242424`,}}>Travel</Link></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/photos/" style={{textDecoration: `none`, color: `#242424`,}}>Photos</Link></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`,}}><a href="https://www.williams-sonoma.com/registry/k98w8vrzw8/registry-list.html" target="_blank" rel="noopener noreferrer" style={{textDecoration: `none`, color: `#242424`,}}>Registry</a></li>
       </ul>
-      <p style={{margin: 0}}>April 4, 2020 | Charlotte, NC</p>
+      <p style={{
+        margin: 0,
+        fontSize: `16px`,
+        fontVariant: `small-caps`,
+        }}>
+          April 4, 2020 | Charlotte, NC
+      </p>
     </div>
   </header>
 )

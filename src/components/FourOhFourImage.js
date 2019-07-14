@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const FourOhFourImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "404.jpg" }) {
+      image: file(relativePath: { eq: "404.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid
@@ -26,7 +26,7 @@ const FourOhFourImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.image.childImageSharp.fluid} />
 }
 
 export default FourOhFourImage

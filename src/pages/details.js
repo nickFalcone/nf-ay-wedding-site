@@ -8,8 +8,10 @@ import GoogleMap from "../components/google-map";
 const Details = () => (
   <Layout>
     <SEO title="Details" />
-    <GoogleMap />
-    <h1>Details</h1>
+    <div style={{ marginTop: `10rem`}}>
+      <h1>Details</h1>
+      <GoogleMap />
+    </div>
   </Layout>
 )
 
