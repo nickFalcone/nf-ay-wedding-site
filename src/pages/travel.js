@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const Travel = () => (
   <Layout>
     <SEO title="Travel" />
-    <div style={{ marginTop: `10rem`}}>
+    <div style={{ marginTop: `10rem`, textAlign: `center`,}}>
       <h1>Travel</h1>
     </div>
   </Layout>

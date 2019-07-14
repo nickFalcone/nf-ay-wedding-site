@@ -13,7 +13,7 @@ const CoverImage = () => {
         }
       }
     }
-    desktopImage: file(relativePath: { eq: "cover-bw.jpg" }) {
+    desktopImage: file(relativePath: { eq: "cover-bw-org.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid

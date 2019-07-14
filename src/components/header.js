@@ -38,15 +38,15 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <ul style={{
-        fontSize: `18px`,
+        fontSize: `16px`,
         listStyleType: `none`,
         textAlign: `center`,
         margin: `0 0 0 15px`,
         fontVariant: `small-caps`,
       }}>
-        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/details/" style={{textDecoration: `none`, color: `#242424`,}}>Details</Link></li>
-        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/travel/" style={{textDecoration: `none`, color: `#242424`,}}>Travel</Link></li>
-        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/photos/" style={{textDecoration: `none`, color: `#242424`,}}>Photos</Link></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/details/" style={{textDecoration: `none`, color: `#242424`, padding: `4px`,}} activeStyle={{color: `#fff`, backgroundColor: `#000`}}>Details</Link></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/travel/" style={{textDecoration: `none`, color: `#242424`, padding: `4px`,}} activeStyle={{color: `#fff`, backgroundColor: `#000`}}>Travel</Link></li>
+        <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/photos/" style={{textDecoration: `none`, color: `#242424`, padding: `4px`,}} activeStyle={{color: `#fff`, backgroundColor: `#000`}}>Photos</Link></li>
         <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`,}}><a href="https://www.williams-sonoma.com/registry/k98w8vrzw8/registry-list.html" target="_blank" rel="noopener noreferrer" style={{textDecoration: `none`, color: `#242424`,}}>Registry</a></li>
       </ul>
       <p style={{
