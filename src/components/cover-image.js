@@ -38,8 +38,10 @@ const CoverImage = () => {
         alt={`nick and alesa`}
         style={{
           height: "100vh",
-          margin: "0 auto", // Used to center the image
+          margin: "0 auto",
         }}
+        fadeIn={false}
+        durationFadeIn={0}
       />
     </div>
   )
