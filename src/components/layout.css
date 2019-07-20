@@ -623,6 +623,14 @@ pre tt:after {
     font-size: 100%;
   }
 }
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 30px;
+  }
+  nav {
+    font-size: 13px;
+  }
+}
 .site-content {
   flex-grow: 1;
 }
@@ -632,13 +640,13 @@ li:after{
   width: 0;
   height: 1px;
   display: block;
-  margin-top: 3px;
+  margin-top: 1px;
   background: #000;
   transition: width 1s ease;
   -webkit-transition: width 1s ease;
 }
 
 li:hover:after{
-  width: 56px;
+  width: 63px;
   background: #000;
 }

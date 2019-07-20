@@ -7,10 +7,10 @@ import SEO from "../components/seo"
 const Photos = () => (
   <Layout>
     <SEO title="Photos" />
-    <div style={{ marginTop: `10rem`, textAlign: `center`,}}>
-      <h1>Photos</h1>
+    <section style={{ marginTop: `10rem`, textAlign: `center`,}}>
+      {/* <h2 style={{ fontFamily: `Dancing Script`, }}>Photos</h2> */}
       <p>We're excited to have <a href="https://www.alexanderimages.com/">AlexanderSouth Photography</a> capture our special day.</p>
-    </div>
+    </section>
   </Layout>
 )
 

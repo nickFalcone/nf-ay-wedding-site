@@ -8,10 +8,10 @@ import GoogleMap from "../components/google-map";
 const Details = () => (
   <Layout>
     <SEO title="Details" />
-    <div style={{ marginTop: `10rem`, textAlign: `center`,}}>
-      <h1>Details</h1>
+    <section style={{ marginTop: `10rem`, textAlign: `center`,}}>
+      {/* <h2 style={{ fontFamily: `Dancing Script`, }}>Details</h2> */}
       <GoogleMap />
-    </div>
+    </section>
   </Layout>
 )
 

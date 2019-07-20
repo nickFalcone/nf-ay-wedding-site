@@ -8,9 +8,9 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Nick &amp; Alesa's Wedding" />
-    <div style={{ maxWidth: `100%`}}>
+    <main style={{ maxWidth: `100%`}}>
       <CoverImage />
-    </div>
+    </main>
   </Layout>
 )
 
