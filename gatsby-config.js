@@ -45,13 +45,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-143613685-1",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // Avoids sending pageview hits from custom paths
-        // exclude: ["//**", "/do-not-track/me/too/"],
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "nickandalesa.com",
+        head: false,
       },
     },
   ],
