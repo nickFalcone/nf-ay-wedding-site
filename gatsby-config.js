@@ -3,8 +3,10 @@ module.exports = {
     title: `Nick & Alesa's wedding`,
     description: `The wedding website for Nick Falcone & Alesa Yuodsnukis`,
     author: `@nickFalcone`,
+    siteUrl: `https://www.nickandalesa.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
