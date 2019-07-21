@@ -627,7 +627,7 @@ pre tt:after {
   h1 {
     font-size: 30px;
   }
-  nav {
+  header ul {
     font-size: 13px;
   }
 }
