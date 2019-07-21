@@ -8,7 +8,7 @@ const CoverImage = () => {
     mobileImage: file(relativePath: { eq: "cover-bw-sm-red.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
           presentationWidth
         }
       }
@@ -16,7 +16,7 @@ const CoverImage = () => {
     desktopImage: file(relativePath: { eq: "cover-bw-red.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
           presentationWidth
         }
       }
