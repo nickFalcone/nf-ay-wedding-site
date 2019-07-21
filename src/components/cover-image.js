@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const CoverImage = () => {
   const data = useStaticQuery(graphql`
   query {
-    mobileImage: file(relativePath: { eq: "cover-bw-sm.jpg" }) {
+    mobileImage: file(relativePath: { eq: "cover-bw-sm-red.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -13,9 +13,9 @@ const CoverImage = () => {
         }
       }
     }
-    desktopImage: file(relativePath: { eq: "cover-bw-org.jpg" }) {
+    desktopImage: file(relativePath: { eq: "cover-bw-red.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
           presentationWidth
         }
