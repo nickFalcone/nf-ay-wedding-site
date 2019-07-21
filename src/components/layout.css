@@ -634,19 +634,3 @@ pre tt:after {
 .site-content {
   flex-grow: 1;
 }
-li:after{
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  display: block;
-  margin-top: 1px;
-  background: #000;
-  transition: width 1s ease;
-  -webkit-transition: width 1s ease;
-}
-
-li:hover:after{
-  width: 63px;
-  background: #000;
-}
