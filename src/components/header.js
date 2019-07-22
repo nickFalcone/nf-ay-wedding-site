@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       textAlign: `center`,
-      background: `linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0))`,
+      background: `linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0))`,
       position: `absolute`,
       right: 0,
       zIndex: 999,
@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
       <ul style={{
         listStyleType: `none`,
         textAlign: `center`,
-        margin: `0 0 0 15px`,
+        margin: `0 0 0 18px`,
         fontVariant: `small-caps`,
       }}>
         <li style={{display: `inline-block`, marginRight: `10px`, paddingRight: `10px`, borderRight: `1px solid #000`}}><Link to="/details/" style={{textDecoration: `none`, color: `#242424`, padding: `4px`,}} activeStyle={{borderBottom: `1px solid #000`}}>Details</Link></li>

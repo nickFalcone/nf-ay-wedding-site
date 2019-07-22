@@ -13,7 +13,7 @@ const Travel = () => (
       target="_blank" rel="noopener noreferrer"
       >two hour flight</a> from most locations on the East Coast.</p>
       <p>There is plenty to <a href="https://www.charlottesgotalot.com/" target="_blank" rel="noopener noreferrer">see and do</a> in Charlotte.</p>
-      <p>Some of our favorite places:</p>
+      <p>Some of our favorite places include:</p>
       <ul style={{maxWidth: `200px`, textAlign: `left`, margin: `0 auto`,}}>
         <li><a href="https://www.tripadvisor.com/Attraction_Review-g49022-d2367131-Reviews-Freedom_Park-Charlotte_North_Carolina.html" target="_blank" rel="noopener noreferrer">Freedom Park</a></li>
         <li><a href="https://www.discoveryplace.org/" target="_blank" rel="noopener noreferrer">Discovery Place</a></li>
