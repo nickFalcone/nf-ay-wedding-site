@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Nick & Alesa's wedding`,
-    description: `The wedding website for Nick Falcone & Alesa Yuodsnukis`,
+    description: `The wedding website of Nick Falcone & Alesa Yuodsnukis`,
     author: `@nickFalcone`,
     siteUrl: `https://www.nickandalesa.com`,
+    url: `https://www.nickandalesa.com`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,

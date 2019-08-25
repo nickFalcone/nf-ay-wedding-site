@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
           }
         }
       }
@@ -26,6 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const url = site.siteMetadata.url
 
   return (
     <Helmet
@@ -68,7 +70,19 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+    <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "${title}",
+        "description": "${metaDescription}",
+        "url": "${url}",
+        "datePublished": "2019-07-07",
+        "dateModified": "${new Date().toISOString()}"
+      }
+    `}</script>
+    </Helmet>
   )
 }
 
