@@ -57,5 +57,18 @@ module.exports = {
         units: "imperial"
       },
     },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://maps.googleapis.com",
+          "https://google-analytics.com",
+          "https://google.com",
+          "https://marketingplatform.google.com",
+          "https://openweathermap.org",
+          "https://www.williams-sonoma.com"
+        ]
+      }
+    },
   ],
 }
