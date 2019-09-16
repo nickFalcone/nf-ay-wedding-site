@@ -1,15 +1,16 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import GoogleMap from "../components/google-map";
+import GoogleMap from "../components/google-map"
+import Weather from "../components/weather"
 
 const Details = () => (
+
   <Layout>
     <SEO title="Details" />
-    <section style={{ marginTop: `10rem`, textAlign: `center`,}}>
-      {/* <h2 style={{ fontFamily: `Dancing Script`, }}>Details</h2> */}
+    <section style={{ marginTop: `8rem`, textAlign: `center`,}}>
+      <Weather />
       <GoogleMap />
     </section>
   </Layout>

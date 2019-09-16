@@ -6,8 +6,7 @@ import SEO from "../components/seo"
 const Travel = () => (
   <Layout>
     <SEO title="Travel" />
-    <section style={{ marginTop: `10rem`, textAlign: `center`,}}>
-      {/* <h2 style={{ fontFamily: `Dancing Script`, }}>Travel</h2> */}
+    <section style={{ marginTop: `9rem`, textAlign: `center`,}}>
       <p>Charlotte is approximately a <a
       href="https://www.google.com/flights?q=google+flights+to+charlotte+douglass&source=lnms&impression_in_search=true&mode_promoted=true&tbm=flm&sa=X&ved=0ahUKEwivptfamr3jAhXLmOAKHUxoB5AQ_AUIESgB#flt=.CLT.2020-04-04*CLT..2020-04-05;c:USD;e:1;sd:1;t:f"
       target="_blank" rel="noopener noreferrer"
