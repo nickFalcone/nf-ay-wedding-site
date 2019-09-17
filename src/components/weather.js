@@ -1,36 +1,78 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React, { Component } from "react"
+import axios from "axios"
 
-const Weather = () => (
-  <StaticQuery
-    query={graphql`
-      query weather {
-        weatherData {
-          main {
-            temp
-            humidity
-            temp_max
-            temp_min
-          }
-          weather {
-            icon
-            description
-          }
-        }
-      }
-    `}
-    render={data => (
-      <div style={{ display: `flex`, justifyContent: `center`, alignItems: `center`, fontFamily: `Helvetica`, height: `100px`, }}>
-        <span style={{ fontSize: `30px`}}>{Math.round(data.weatherData.main.temp)}&deg;</span>
-        <img src={`https://openweathermap.org/img/wn/${data.weatherData.weather[0].icon}@2x.png`} alt={`${data.weatherData.weather[0].description}`} style={{margin: 0}}></img>
-        <span style={{ fontSize: `14px`}}>
-          Hi: {Math.round(data.weatherData.main.temp_max)}&deg;<br/>
-          Lo: {Math.round(data.weatherData.main.temp_min)}&deg;<br/>
+class Weather extends Component {
+  state = {
+    w: {
+      temp: "",
+      hi: "",
+      lo: "",
+      icon: "01d",
+      desc: "",
+      // humidity: "",
+    },
+  }
+
+  componentDidMount() {
+    this.fetchWeatherData()
+  }
+
+  render() {
+    const { temp, hi, lo, icon, desc } = this.state.w
+    return (
+      <div
+        style={{
+          display: `flex`,
+          justifyContent: `center`,
+          alignItems: `center`,
+          fontFamily: `Helvetica`,
+          height: `100px`,
+        }}
+      >
+        <span style={{ fontSize: `30px` }}>{`${Math.round(temp)}`}&deg;</span>
+        <img
+          src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
+          alt={`${desc}`}
+          style={{ margin: 0 }}
+        ></img>
+        <span style={{ fontSize: `14px` }}>
+          Hi: {`${Math.round(hi)}`}&deg;
+          <br />
+          Lo: {`${Math.round(lo)}`}&deg;
+          <br />
         </span>
-        {/* <span style={{ fontSize: `30px`}}>{Math.round(data.weatherData.main.humidity)}%</span> */}
       </div>
-    )}
-  />
-)
+    )
+  }
+
+  fetchWeatherData = () => {
+    axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?id=4460243&APPID=11e497791d0c99b5ce591bf0ad62a9fe&units=imperial`
+      )
+      .then(response => {
+        const temp = response.data.main.temp
+        const hi = response.data.main.temp_max
+        const lo = response.data.main.temp_min
+        const humidity = response.data.main.humidity
+        const icon = response.data.weather[0].icon
+        const desc = response.data.weather[0].description
+        this.setState({
+          w: {
+            ...this.state.w,
+            temp,
+            hi,
+            lo,
+            icon,
+            desc,
+            humidity,
+          },
+        })
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+}
 
 export default Weather

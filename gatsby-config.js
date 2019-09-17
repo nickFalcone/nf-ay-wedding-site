@@ -50,14 +50,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-weather",
-      options: {
-        id: "4460243",
-        APPID: "11e497791d0c99b5ce591bf0ad62a9fe",
-        units: "imperial"
-      },
-    },
-    {
       resolve: "gatsby-plugin-preconnect",
       options: {
         domains: [
