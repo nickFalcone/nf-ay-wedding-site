@@ -20,7 +20,7 @@ class Weather extends Component {
   render() {
     const { temp, hi, lo, icon, desc } = this.state.w
     return (
-      <div
+      <figure
         style={{
           display: `flex`,
           justifyContent: `center`,
@@ -29,11 +29,14 @@ class Weather extends Component {
           height: `100px`,
         }}
       >
+        <span style={{ fontSize: `20px`, marginRight: `25px`, fontFamily: `Dancing Script`, lineHeight: `16px` }}>Current<br/> forecast</span>
         <span style={{ fontSize: `30px` }}>{`${Math.round(temp)}`}&deg;</span>
         <img
           src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
           alt={`${desc}`}
           style={{ margin: 0 }}
+          height='100px'
+          width='100px'
         ></img>
         <span style={{ fontSize: `14px` }}>
           Hi: {`${Math.round(hi)}`}&deg;
@@ -41,7 +44,7 @@ class Weather extends Component {
           Lo: {`${Math.round(lo)}`}&deg;
           <br />
         </span>
-      </div>
+      </figure>
     )
   }
 
