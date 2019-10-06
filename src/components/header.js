@@ -119,21 +119,34 @@ const Header = ({ siteTitle }) => (
               Photos
             </Link>
           </li>
-          <li style={{ display: `inline-block`, margin: 0, padding: `10px` }}>
-            <a
-              href="https://www.williams-sonoma.com/registry/k98w8vrzw8/registry-list.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: `none`, color: `#242424` }}
+          <li
+            style={{
+              display: `inline-block`,
+              margin: 0,
+              padding: `10px`,
+            }}
+          >
+            <Link
+              to="/registry/"
+              style={{
+                textDecoration: `none`,
+                color: `#242424`,
+                padding: `4px`,
+              }}
+              activeStyle={{
+                borderBottom: `1px solid #000`,
+                paddingBottom: `12px`,
+                color: `#000`,
+              }}
             >
               Registry
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
       <time
         style={{
-          marginLeft: `3px`,
+          marginLeft: `-5px`,
           fontSize: `14px`,
           fontVariant: `small-caps`,
         }}

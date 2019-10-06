@@ -58,7 +58,9 @@ module.exports = {
           "https://google.com",
           "https://marketingplatform.google.com",
           "https://openweathermap.org",
-          "https://www.williams-sonoma.com"
+          "https://www.williams-sonoma.com",
+          "https://www.westelm.com",
+          "https://www.potterybarn.com"
         ]
       }
     },
