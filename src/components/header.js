@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       textAlign: `center`,
-      background: `linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0))`,
+      background: `linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))`,
       position: `absolute`,
       right: 0,
       zIndex: 999,
@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => (
           style={{
             listStyleType: `none`,
             textAlign: `center`,
-            margin: `0 0 12px 0`,
+            margin: `0 0 5px 0`,
             fontVariant: `small-caps`,
           }}
         >
@@ -144,16 +144,16 @@ const Header = ({ siteTitle }) => (
           </li>
         </ul>
       </nav>
-      <time
+      <date
         style={{
           marginLeft: `-5px`,
-          fontSize: `14px`,
+          fontSize: `16px`,
           fontVariant: `small-caps`,
         }}
         className="datePlace"
       >
         April 4, 2020 | Charlotte, NC
-      </time>
+      </date>
     </section>
   </header>
 )
