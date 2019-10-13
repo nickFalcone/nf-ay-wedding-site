@@ -634,3 +634,13 @@ pre tt:after {
 .site-content {
   flex-grow: 1;
 }
+.store {
+  margin: 0 auto;
+  width: 150px;
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+
+}
+.store:hover {
+  opacity: 0.60;
+}

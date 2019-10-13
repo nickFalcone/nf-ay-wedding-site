@@ -37,7 +37,7 @@ const Stores = () => {
 
   return (
     <main>
-      <section>
+      <section class={`store`}>
         <a
           href={`https://www.williams-sonoma.com/registry/k98w8vrzw8/registry-list.html`}
           target={`_blank`}
@@ -57,7 +57,7 @@ const Stores = () => {
           />
         </a>
       </section>
-      <section>
+      <section class={`store`}>
         <a
           href={`https://www.potterybarn.com/registry/k98w8vrzw8/registry-list.html`}
           target={`_blank`}
@@ -77,7 +77,7 @@ const Stores = () => {
           />
         </a>
       </section>
-      <section>
+      <section class={`store`}>
         <a
           href={`https://www.westelm.com/registry/k98w8vrzw8/registry-list.html`}
           target={`_blank`}

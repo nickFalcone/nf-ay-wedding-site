@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       textAlign: `center`,
-      background: `linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))`,
+      background: `linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))`,
       position: `absolute`,
       right: 0,
       zIndex: 999,
