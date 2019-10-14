@@ -36,7 +36,7 @@ const Stores = () => {
   const we = [data.wem.childImageSharp.fluid]
 
   return (
-    <main>
+    <div>
       <section class={`store`}>
         <a
           href={`https://www.williams-sonoma.com/registry/k98w8vrzw8/registry-list.html`}
@@ -97,7 +97,7 @@ const Stores = () => {
           />
         </a>
       </section>
-    </main>
+    </div>
   )
 }
 

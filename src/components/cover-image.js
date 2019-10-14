@@ -32,7 +32,7 @@ const CoverImage = () => {
   ]
 
   return (
-    <main>
+    <div>
       <Img
         fluid={sources}
         alt={`nick and alesa`}
@@ -44,7 +44,7 @@ const CoverImage = () => {
         fadeIn={false}
         durationFadeIn={0}
       />
-    </main>
+    </div>
   )
 }
 
