@@ -628,7 +628,7 @@ pre tt:after {
     font-size: 30px;
   }
   header ul {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .site-content {
@@ -643,4 +643,17 @@ pre tt:after {
 }
 .store:hover {
   opacity: 0.60;
+}
+
+.phone,
+.navLink {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(230, 230, 230, 0.25) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 1s ease;
+}
+
+.phone:hover,
+.navLink:hover {
+  background-position: left bottom;
 }

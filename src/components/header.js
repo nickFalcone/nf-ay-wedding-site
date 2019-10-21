@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       textAlign: `center`,
-      background: `linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))`,
+      background: `linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))`,
       position: `absolute`,
       right: 0,
       zIndex: 999,
@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => (
           style={{
             listStyleType: `none`,
             textAlign: `center`,
-            margin: `0 0 5px 0`,
+            margin: `10px 0`,
             fontVariant: `small-caps`,
           }}
         >
@@ -51,21 +51,22 @@ const Header = ({ siteTitle }) => (
             style={{
               display: `inline-block`,
               margin: 0,
-              padding: `10px`,
+              padding: `6px 0`,
               borderRight: `1px solid #000`,
             }}
           >
             <Link
+              class="navLink"
               to="/details/"
               style={{
                 textDecoration: `none`,
                 color: `#242424`,
-                padding: `4px`,
+                padding: `9px 16px`,
               }}
               activeStyle={{
-                borderBottom: `1px solid #000`,
-                paddingBottom: `12px`,
+                // borderBottom: `1px solid #000`,
                 color: `#000`,
+                backgroundColor: `#f5f5f5`,
               }}
             >
               Details
@@ -75,21 +76,22 @@ const Header = ({ siteTitle }) => (
             style={{
               display: `inline-block`,
               margin: 0,
-              padding: `10px`,
+              padding: `6px 0`,
               borderRight: `1px solid #000`,
             }}
           >
             <Link
+              class="navLink"
               to="/travel/"
               style={{
                 textDecoration: `none`,
                 color: `#242424`,
-                padding: `4px`,
+                padding: `9px 16px`,
               }}
               activeStyle={{
-                borderBottom: `1px solid #000`,
-                paddingBottom: `12px`,
+                // borderBottom: `1px solid #000`,
                 color: `#000`,
+                backgroundColor: `#f5f5f5`,
               }}
             >
               Travel
@@ -99,21 +101,22 @@ const Header = ({ siteTitle }) => (
             style={{
               display: `inline-block`,
               margin: 0,
-              padding: `10px`,
+              padding: `6px 0`,
               borderRight: `1px solid #000`,
             }}
           >
             <Link
+              class="navLink"
               to="/photos/"
               style={{
                 textDecoration: `none`,
                 color: `#242424`,
-                padding: `4px`,
+                padding: `9px 16px`,
               }}
               activeStyle={{
-                borderBottom: `1px solid #000`,
-                paddingBottom: `12px`,
+                // borderBottom: `1px solid #000`,
                 color: `#000`,
+                backgroundColor: `#f5f5f5`,
               }}
             >
               Photos
@@ -123,20 +126,21 @@ const Header = ({ siteTitle }) => (
             style={{
               display: `inline-block`,
               margin: 0,
-              padding: `10px`,
+              padding: `6px 0`,
             }}
           >
             <Link
+              class="navLink"
               to="/registry/"
               style={{
                 textDecoration: `none`,
                 color: `#242424`,
-                padding: `4px`,
+                padding: `9px 16px`,
               }}
               activeStyle={{
-                borderBottom: `1px solid #000`,
-                paddingBottom: `12px`,
+                // borderBottom: `1px solid #000`,
                 color: `#000`,
+                backgroundColor: `#f5f5f5`,
               }}
             >
               Registry

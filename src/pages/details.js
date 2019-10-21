@@ -9,7 +9,8 @@ const Details = () => (
 
   <Layout>
     <SEO title="Details" />
-    <section style={{ marginTop: `8rem`, textAlign: `center`,}}>
+    <section style={{ marginTop: `10rem`, textAlign: `center`,}}>
+    <p style={{ fontSize: `24px`, margin: `1rem 0 0 0`, fontFamily: `Dancing Script`, lineHeight: `16px` }}>Current forecast</p>
       <Weather />
       <GoogleMap />
     </section>

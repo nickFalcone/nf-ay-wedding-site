@@ -27,9 +27,9 @@ class Weather extends Component {
           alignItems: `center`,
           fontFamily: `Helvetica`,
           height: `100px`,
+          margin: 0,
         }}
       >
-        <span style={{ fontSize: `20px`, marginRight: `25px`, fontFamily: `Dancing Script`, lineHeight: `16px` }}>Current<br/> forecast</span>
         <span style={{ fontSize: `30px` }}>{`${Math.round(temp)}`}&deg;</span>
         <img
           src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
