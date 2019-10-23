@@ -38,7 +38,7 @@ const CitySkyline = () => {
         alt={`charlotte skyline`}
         style={{
           margin: "0 auto",
-          position: "absolute",
+          position: "fixed",
           bottom: 0,
           left: 0,
           right: 0,
