@@ -11,7 +11,7 @@ const IndexPage = () => (
     {/* <main style={{ maxWidth: `100%`}}>
       <CoverImage />
     </main> */}
-    <section style={{ margin: `10rem auto`, textAlign: `left`, maxWidth: `450px`, }}>
+    <section style={{ margin: `10rem auto`, textAlign: `left`, maxWidth: `350px`, }}>
       {/* <Weather />
       <GoogleMap /> */}
       <p style={{ textAlign: `right`,}}>March 14, 2020</p>
