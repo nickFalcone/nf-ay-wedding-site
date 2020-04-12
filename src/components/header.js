@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => (
             fontVariant: `small-caps`,
           }}
         >
-          <li
+          {/* <li
             style={{
               display: `inline-block`,
               margin: 0,
@@ -71,7 +71,7 @@ const Header = ({ siteTitle }) => (
             >
               Details
             </Link>
-          </li>
+          </li> */}
           <li
             style={{
               display: `inline-block`,
@@ -97,7 +97,7 @@ const Header = ({ siteTitle }) => (
               Travel
             </Link>
           </li>
-          <li
+          {/* <li
             style={{
               display: `inline-block`,
               margin: 0,
@@ -121,7 +121,7 @@ const Header = ({ siteTitle }) => (
             >
               Photos
             </Link>
-          </li>
+          </li> */}
           <li
             style={{
               display: `inline-block`,
@@ -148,7 +148,7 @@ const Header = ({ siteTitle }) => (
           </li>
         </ul>
       </nav>
-      <date
+      {/* <date
         style={{
           marginLeft: `-5px`,
           fontSize: `16px`,
@@ -157,7 +157,7 @@ const Header = ({ siteTitle }) => (
         className="datePlace"
       >
         April 4, 2020 | Charlotte, NC
-      </date>
+      </date> */}
     </section>
   </header>
 )
