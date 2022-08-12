@@ -8,17 +8,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Dancing Script`,
-            subsets: [`latin`],
-          }
-        ],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
