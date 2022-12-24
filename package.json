@@ -14,7 +14,7 @@
     "gatsby-plugin-preconnect": "^1.0.5",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.11",
-    "gatsby-plugin-sharp": "^2.2.29",
+    "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-plugin-sitemap": "^2.2.17",
     "gatsby-source-filesystem": "^2.1.31",
     "gatsby-transformer-sharp": "^2.2.21",
